@@ -28,7 +28,7 @@ export default function ContactPage() {
             name: "Request a Renovation Quote",
             description: `Contact ${site.name} for home renovation, commercial renovation, basement development, kitchen, washroom, and flooring quotes in Edmonton.`,
             path: "/contact",
-            image: "/images/contact-work.jpg",
+            image: "/images/ssj-commercial-dining-renovation.jpg",
           }),
         ]}
       />
@@ -37,7 +37,7 @@ export default function ContactPage() {
         eyebrow="Request a quote"
         title="Start your renovation conversation with SSJ."
         description={`Call ${site.phone} or send a short project note. Share the space, location, timeline, and the type of renovation you have in mind.`}
-        image="/images/contact-work.jpg"
+        image="/images/ssj-commercial-dining-renovation.jpg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Contact", href: "/contact" },

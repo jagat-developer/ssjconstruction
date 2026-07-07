@@ -26,7 +26,7 @@ export default function ServicesPage() {
             description:
               "Explore SSJ renovation services including home renovation, commercial renovation, basement development, washroom renovation, kitchen remodels, and flooring installation.",
             path: "/services",
-            image: "/images/service-home.jpg",
+            image: "/images/ssj-living-room-fireplace.jpg",
           }),
           itemListJsonLd({
             name: "Renovation services",
@@ -44,7 +44,7 @@ export default function ServicesPage() {
         eyebrow="Renovation services"
         title="Practical renovation scopes for homes, businesses, and investment spaces."
         description="Choose the service that matches your project. Every page includes local service-area links, common questions, and a clear path to request a quote."
-        image="/images/service-home.jpg"
+        image="/images/ssj-living-room-fireplace.jpg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Services", href: "/services" },

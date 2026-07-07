@@ -66,7 +66,7 @@ export default async function AreaPage({ params }: { params: Promise<{ area: str
         eyebrow={`${area.region} renovation services`}
         title={`Renovation contractor in ${area.name}`}
         description={`${area.intro} SSJ plans home, commercial, basement, kitchen, washroom, and flooring scopes around local project needs.`}
-        image="/images/hero-renovation.jpg"
+        image="/images/ssj-living-room-fireplace.jpg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Areas", href: "/areas" },

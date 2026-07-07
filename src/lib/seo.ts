@@ -22,7 +22,13 @@ type SeoConfig = {
   keywords?: string[];
 };
 
-export function buildMetadata({ title, description, path = "/", image = "/images/hero-renovation.jpg", keywords = [] }: SeoConfig): Metadata {
+export function buildMetadata({
+  title,
+  description,
+  path = "/",
+  image = "/images/ssj-living-room-fireplace.jpg",
+  keywords = [],
+}: SeoConfig): Metadata {
   const canonical = absoluteUrl(path);
   const imageUrl = absoluteUrl(image);
 
@@ -153,7 +159,7 @@ export function localBusinessJsonLd(path = "/") {
       addressRegion: area.region,
       addressCountry: site.country,
     })),
-    image: absoluteUrl("/images/hero-renovation.jpg"),
+    image: absoluteUrl("/images/ssj-living-room-fireplace.jpg"),
     subjectOf: {
       "@id": `${absoluteUrl(path)}#webpage`,
     },
@@ -191,7 +197,7 @@ export function webpageJsonLd({
   name,
   description,
   path,
-  image = "/images/hero-renovation.jpg",
+  image = "/images/ssj-living-room-fireplace.jpg",
 }: {
   name: string;
   description: string;

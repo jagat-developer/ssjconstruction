@@ -17,17 +17,17 @@ export default function Home() {
   const insights = [
     {
       title: "Planning a basement that feels like part of the home",
-      image: "/images/service-basement.jpg",
+      image: "/images/ssj-basement-feature-wall.jpg",
       href: "/services/basement-development",
     },
     {
       title: "Kitchen upgrades that improve daily flow",
-      image: "/images/project-kitchen.jpg",
+      image: "/images/ssj-kitchen-cabinet-remodel.jpg",
       href: "/services/kitchen-remodel",
     },
     {
       title: "Flooring choices for busy Edmonton homes",
-      image: "/images/project-flooring.jpg",
+      image: "/images/ssj-flooring-installation.jpg",
       href: "/services/flooring-installation",
     },
   ];
@@ -56,8 +56,8 @@ export default function Home() {
       />
       <section id="home" className="relative min-h-[760px] overflow-hidden bg-[#111315] text-white">
         <Image
-          src="/images/hero-renovation.jpg"
-          alt="Modern renovated home exterior at dusk"
+          src="/images/ssj-living-room-fireplace.jpg"
+          alt="Finished living room renovation with fireplace and feature wall"
           fill
           priority
           sizes="100vw"
@@ -125,8 +125,8 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.82fr_1fr]">
           <div className="relative min-h-[520px] overflow-hidden bg-[#ece8df]">
             <Image
-              src="/images/about-interior.jpg"
-              alt="Bright renovated living room with warm wood flooring"
+              src="/images/ssj-green-feature-wall.jpg"
+              alt="Detailed green feature wall and renovation finishes"
               fill
               sizes="(max-width: 1024px) 100vw, 42vw"
               className="object-cover"
@@ -209,8 +209,8 @@ export default function Home() {
 
           <div className="relative mt-12 min-h-[580px] overflow-hidden bg-[#17191d]">
             <Image
-              src="/images/featured-suite.jpg"
-              alt="Modern completed renovation with clean exterior finishes"
+              src="/images/ssj-media-wall-built-ins.jpg"
+              alt="Dark media wall renovation with custom built-in shelving"
               fill
               sizes="100vw"
               className="object-cover opacity-82"
@@ -238,8 +238,8 @@ export default function Home() {
             <p className="text-sm font-black text-[#8a8a8a]">Project gallery</p>
             <h2 className="text-4xl font-black leading-[1.08] sm:text-5xl">Recent renovation directions</h2>
             <p className="text-base leading-8 text-[#666]">
-              Dummy imagery is used here, matched to the SSJ renovation categories until final
-              project photography is supplied.
+              Selected SSJ project photos show the range of practical updates, finish work, and
+              site coordination behind each renovation category.
             </p>
           </div>
           <div className="mt-12 grid gap-x-8 gap-y-16 md:grid-cols-2">

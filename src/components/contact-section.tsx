@@ -86,7 +86,7 @@ export function ContactSection({
       </div>
       <div className="relative min-h-[520px] overflow-hidden lg:min-h-[720px]">
         <Image
-          src="/images/contact-work.jpg"
+          src="/images/ssj-commercial-dining-renovation.jpg"
           alt="Renovated dining space with modern lighting"
           fill
           sizes="(max-width: 1024px) 100vw, 52vw"

@@ -43,7 +43,7 @@ export default function AreasPage() {
         eyebrow="Service areas"
         title="Renovation services across Edmonton and nearby communities."
         description="Each service-area page is generated from structured local data so searchers can find the renovation scope and city that matches their project."
-        image="/images/hero-renovation.jpg"
+        image="/images/ssj-living-room-fireplace.jpg"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Areas", href: "/areas" },

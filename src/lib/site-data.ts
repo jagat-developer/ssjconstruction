@@ -50,8 +50,8 @@ export const services: Service[] = [
       "Room upgrades, layout improvements, painting, finishing, and full interior refreshes built around how your family lives.",
     seoDescription:
       "Plan home renovation work with SSJ Construction & Renovations, including interior updates, flooring, painting, layout improvements, and full room remodels.",
-    image: "/images/service-home.jpg",
-    heroImage: "/images/about-interior.jpg",
+    image: "/images/ssj-living-room-fireplace.jpg",
+    heroImage: "/images/ssj-green-feature-wall.jpg",
     highlights: ["Interior upgrades", "Room-by-room planning", "Clean daily coordination"],
     includes: ["Layout and finish planning", "Flooring and painting", "Drywall and trim updates", "Fixture and detail upgrades"],
     outcomes: ["A refreshed home that feels intentional", "Improved function for everyday routines", "A clear scope before construction starts"],
@@ -77,8 +77,8 @@ export const services: Service[] = [
       "Practical upgrades for offices, retail spaces, investment properties, and tenant improvements across Edmonton.",
     seoDescription:
       "Commercial renovation services for offices, retail units, tenant improvements, and investment properties with practical scheduling and finish coordination.",
-    image: "/images/service-commercial.jpg",
-    heroImage: "/images/service-commercial.jpg",
+    image: "/images/ssj-commercial-dining-renovation.jpg",
+    heroImage: "/images/ssj-commercial-dining-renovation.jpg",
     highlights: ["Tenant improvements", "Office and retail updates", "Efficient trade coordination"],
     includes: ["Space refreshes", "Painting and flooring", "Fixture coordination", "Commercial finish upgrades"],
     outcomes: ["A cleaner customer-facing space", "Better function for staff and visitors", "Work planned around operational realities"],
@@ -104,8 +104,8 @@ export const services: Service[] = [
       "Turn unused lower-level space into comfortable living areas, rentals, offices, gyms, or entertainment rooms.",
     seoDescription:
       "Basement development and basement finishing services for family rooms, suites, offices, gyms, and practical lower-level living spaces.",
-    image: "/images/service-basement.jpg",
-    heroImage: "/images/featured-suite.jpg",
+    image: "/images/ssj-basement-feature-wall.jpg",
+    heroImage: "/images/ssj-media-wall-built-ins.jpg",
     highlights: ["Basement finishing", "Living suites", "Lower-level remodels"],
     includes: ["Layout planning", "Framing and drywall coordination", "Flooring and paint", "Washroom and utility coordination"],
     outcomes: ["More usable square footage", "A basement that feels connected to the home", "Clear decisions before trades begin"],
@@ -131,8 +131,8 @@ export const services: Service[] = [
       "Refresh bathrooms with better surfaces, fixtures, storage, tile, flooring, lighting, and practical moisture-ready finishes.",
     seoDescription:
       "Washroom renovation services for bathrooms, powder rooms, ensuite upgrades, fixture replacement, tile, flooring, and finishing.",
-    image: "/images/project-bathroom.jpg",
-    heroImage: "/images/project-bathroom.jpg",
+    image: "/images/ssj-bathroom-shower-renovation.jpg",
+    heroImage: "/images/ssj-bathroom-shower-renovation.jpg",
     highlights: ["Bathroom remodels", "Fixture updates", "Tile and finishing"],
     includes: ["Vanity and fixture planning", "Tile and flooring", "Paint and trim", "Plumbing and electrical coordination"],
     outcomes: ["A cleaner, more functional bathroom", "Better storage and everyday usability", "Finishes chosen for moisture and wear"],
@@ -158,8 +158,8 @@ export const services: Service[] = [
       "Improve the heart of the home with practical kitchen updates, surface upgrades, storage improvements, and cleaner finishes.",
     seoDescription:
       "Kitchen remodel and kitchen renovation services for layout improvements, cabinets, counters, flooring, painting, fixtures, and finishing details.",
-    image: "/images/project-kitchen.jpg",
-    heroImage: "/images/project-kitchen.jpg",
+    image: "/images/ssj-kitchen-cabinet-remodel.jpg",
+    heroImage: "/images/ssj-kitchen-cabinet-remodel.jpg",
     highlights: ["Kitchen upgrades", "Storage and surface planning", "Durable everyday finishes"],
     includes: ["Cabinet and counter coordination", "Flooring and paint", "Lighting and fixture planning", "Backsplash and trim details"],
     outcomes: ["A kitchen that works better every day", "Cleaner surfaces and improved flow", "A renovation scope matched to budget"],
@@ -185,8 +185,8 @@ export const services: Service[] = [
       "Update worn floors with durable, clean flooring options that fit the room, use, maintenance needs, and renovation budget.",
     seoDescription:
       "Flooring installation and flooring replacement for renovation projects, including practical material guidance, prep, and finishing coordination.",
-    image: "/images/project-flooring.jpg",
-    heroImage: "/images/project-flooring.jpg",
+    image: "/images/ssj-flooring-installation.jpg",
+    heroImage: "/images/ssj-flooring-installation.jpg",
     highlights: ["Flooring replacement", "Material guidance", "Trim and finish details"],
     includes: ["Flooring selection support", "Prep and installation coordination", "Baseboard and trim updates", "Painting tie-ins when needed"],
     outcomes: ["A cleaner foundation for the whole room", "Materials matched to daily use", "A finished look with trim and detail work"],
@@ -266,22 +266,22 @@ export const projects = [
   {
     title: "Warm kitchen remodel",
     type: "Kitchen renovation",
-    image: "/images/project-kitchen.jpg",
+    image: "/images/ssj-kitchen-cabinet-remodel.jpg",
   },
   {
     title: "Clean washroom upgrade",
     type: "Bathroom renovation",
-    image: "/images/project-bathroom.jpg",
+    image: "/images/ssj-bathroom-shower-renovation.jpg",
   },
   {
     title: "Durable flooring refresh",
     type: "Flooring and finishing",
-    image: "/images/project-flooring.jpg",
+    image: "/images/ssj-flooring-installation.jpg",
   },
   {
     title: "Basement living suite",
     type: "Basement development",
-    image: "/images/about-interior.jpg",
+    image: "/images/ssj-basement-feature-wall.jpg",
   },
 ];
 
