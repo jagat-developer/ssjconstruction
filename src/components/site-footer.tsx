@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { areas, services, site } from "@/lib/site-data";
 
@@ -59,7 +60,19 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="pt-10">
-          <p className="text-[4.2rem] font-black leading-none text-white sm:text-[7rem] lg:text-[11rem]">SSJ®</p>
+          <Link
+            href="/"
+            className="relative block aspect-[601/472] w-full max-w-[360px] overflow-hidden border border-white/10 bg-[#123d68] shadow-[0_24px_70px_rgba(0,0,0,0.35)] sm:max-w-[440px]"
+            aria-label="SSJ Construction home"
+          >
+            <Image
+              src="/images/ssj-construction-logo.jpg"
+              alt="SSJ Construction & Renovations Limited logo"
+              fill
+              sizes="(max-width: 640px) 88vw, 440px"
+              className="object-cover"
+            />
+          </Link>
           <div className="mt-6 flex flex-col gap-3 text-sm text-white/46 sm:flex-row sm:items-center sm:justify-between">
             <p>© 2026 {site.name}. All rights reserved.</p>
             <p>Built for Edmonton renovation inquiries.</p>
