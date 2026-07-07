@@ -32,6 +32,9 @@ export function SiteHeader({ overlay = false }: { overlay?: boolean }) {
           <Link href="/#projects" className={`transition ${linkClass}`}>
             Projects
           </Link>
+          <Link href="/blog" className={`transition ${linkClass}`}>
+            Blog
+          </Link>
           <Link href="/contact" className={`transition ${linkClass}`}>
             Contact
           </Link>

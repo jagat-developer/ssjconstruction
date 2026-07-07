@@ -341,6 +341,10 @@ export const packages = [
 ];
 
 export function absoluteUrl(path = "/") {
+  if (path.startsWith("http://") || path.startsWith("https://")) {
+    return path;
+  }
+
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
   return `${site.url}${normalizedPath}`;
 }

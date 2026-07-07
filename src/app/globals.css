@@ -31,3 +31,103 @@ textarea {
   background: #e9b11f;
   color: #111315;
 }
+
+.blog-content {
+  color: #333;
+  font-size: 1.0625rem;
+  line-height: 1.9;
+  width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.blog-content * {
+  max-width: 100%;
+}
+
+.blog-content > * + * {
+  margin-top: 1.35rem;
+}
+
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+  color: #171717;
+  font-weight: 900;
+  line-height: 1.08;
+  margin-top: 2.5rem;
+}
+
+.blog-content h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.blog-content h3 {
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+}
+
+.blog-content h4 {
+  font-size: 1.35rem;
+}
+
+.blog-content p,
+.blog-content li {
+  color: #555;
+}
+
+.blog-content a {
+  color: #8d6f12;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.blog-content ul,
+.blog-content ol {
+  padding-left: 1.3rem;
+}
+
+.blog-content ul {
+  list-style: disc;
+}
+
+.blog-content ol {
+  list-style: decimal;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid #e9b11f;
+  background: #f6f5f1;
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 1.6;
+  padding: 1.25rem 1.5rem;
+}
+
+.blog-content img {
+  display: block;
+  width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+}
+
+.blog-content table {
+  display: block;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  overflow-x: auto;
+}
+
+.blog-content th,
+.blog-content td {
+  border: 1px solid #d7d2c8;
+  padding: 0.85rem;
+  text-align: left;
+}
+
+.blog-content th {
+  background: #f6f5f1;
+  color: #171717;
+  font-weight: 900;
+}

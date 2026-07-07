@@ -12,6 +12,9 @@ export function SiteFooter() {
               Dependable renovation work for homes, commercial spaces, basements, kitchens,
               washrooms, and flooring in Edmonton.
             </p>
+            <Link href="/blog" className="mt-5 inline-flex text-sm font-black text-[#e9b11f] transition hover:text-white">
+              Read renovation insights
+            </Link>
           </div>
           <div>
             <p className="text-sm font-black text-white">Services</p>
@@ -43,6 +46,9 @@ export function SiteFooter() {
                 {site.email}
               </a>
               <span>Edmonton and surrounding areas</span>
+              <Link href="/blog" className="hover:text-white">
+                Renovation blog
+              </Link>
             </div>
             <Link
               href="/contact"
