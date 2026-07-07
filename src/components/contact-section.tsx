@@ -4,10 +4,21 @@ import { site } from "@/lib/site-data";
 export function ContactSection({
   title = "Tell us what you want to change. We’ll help shape the next step.",
   kicker = "Let’s collaborate",
+  status,
 }: {
   title?: string;
   kicker?: string;
+  status?: "sent" | "error" | "missing";
 }) {
+  const statusMessage =
+    status === "sent"
+      ? "Thanks. Your inquiry was sent to SSJ and the team will follow up shortly."
+      : status === "missing"
+        ? "Please add your name, phone number, and project details before sending."
+        : status === "error"
+          ? "Something went wrong while sending. Please call or email SSJ directly."
+          : "";
+
   return (
     <section id="contact" className="grid overflow-hidden bg-[#0d0f13] text-white lg:grid-cols-[0.96fr_1.04fr]">
       <div className="px-5 py-16 sm:px-8 sm:py-20 lg:py-8 lg:pl-[max(2rem,calc((100vw-1280px)/2+2rem))] lg:pr-14 xl:pr-20">
@@ -16,6 +27,18 @@ export function ContactSection({
           <h2 className="max-w-xl text-4xl font-black leading-[1.04] text-balance sm:text-5xl lg:text-[2.7rem] xl:text-[3rem]">
             {title}
           </h2>
+          {statusMessage ? (
+            <p
+              role="status"
+              className={`mt-5 border px-4 py-3 text-sm font-bold leading-6 ${
+                status === "sent"
+                  ? "border-[#e9b11f]/40 bg-[#e9b11f]/12 text-[#f5d36a]"
+                  : "border-white/12 bg-white/[0.065] text-white/72"
+              }`}
+            >
+              {statusMessage}
+            </p>
+          ) : null}
           <div className="mt-7 grid gap-4 sm:grid-cols-2">
             <a
               href={site.phoneHref}
@@ -33,7 +56,11 @@ export function ContactSection({
             </a>
           </div>
 
-          <form className="mt-6 grid gap-3" action={`mailto:${site.email}`} method="post" encType="text/plain">
+          <form className="mt-6 grid gap-3" action="/api/contact" method="post">
+            <div className="hidden" aria-hidden="true">
+              <label htmlFor="company">Company</label>
+              <input id="company" name="company" tabIndex={-1} autoComplete="off" />
+            </div>
             <div className="grid gap-3 sm:grid-cols-2">
               <label className="sr-only" htmlFor="name">
                 Your name
@@ -56,21 +83,34 @@ export function ContactSection({
                 className="h-12 min-w-0 border border-white/12 bg-white/[0.065] px-5 text-sm text-white outline-none transition placeholder:text-white/42 focus:border-[#e9b11f]"
               />
             </div>
-            <label className="sr-only" htmlFor="project">
-              Project type
-            </label>
-            <input
-              id="project"
-              name="project"
-              placeholder="Kitchen, basement, washroom, commercial..."
-              className="h-12 min-w-0 border border-white/12 bg-white/[0.065] px-5 text-sm text-white outline-none transition placeholder:text-white/42 focus:border-[#e9b11f]"
-            />
+            <div className="grid gap-3 sm:grid-cols-2">
+              <label className="sr-only" htmlFor="email">
+                Your email
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Your email"
+                className="h-12 min-w-0 border border-white/12 bg-white/[0.065] px-5 text-sm text-white outline-none transition placeholder:text-white/42 focus:border-[#e9b11f]"
+              />
+              <label className="sr-only" htmlFor="project">
+                Project type
+              </label>
+              <input
+                id="project"
+                name="project"
+                placeholder="Kitchen, basement, washroom..."
+                className="h-12 min-w-0 border border-white/12 bg-white/[0.065] px-5 text-sm text-white outline-none transition placeholder:text-white/42 focus:border-[#e9b11f]"
+              />
+            </div>
             <label className="sr-only" htmlFor="message">
               Project details
             </label>
             <textarea
               id="message"
               name="message"
+              required
               placeholder="Tell us about the space, timeline, and goals"
               rows={4}
               className="min-h-20 resize-none border border-white/12 bg-white/[0.065] px-5 py-4 text-sm text-white outline-none transition placeholder:text-white/42 focus:border-[#e9b11f]"

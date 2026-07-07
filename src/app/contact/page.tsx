@@ -14,7 +14,19 @@ export const metadata: Metadata = buildMetadata({
   keywords: ["renovation quote Edmonton", "contact SSJ Renovations", "Edmonton contractor quote"],
 });
 
-export default function ContactPage() {
+type ContactPageProps = {
+  searchParams: Promise<{ form?: string | string[] | undefined }>;
+};
+
+function getFormStatus(value: string | string[] | undefined) {
+  const status = Array.isArray(value) ? value[0] : value;
+
+  return status === "sent" || status === "error" || status === "missing" ? status : undefined;
+}
+
+export default async function ContactPage({ searchParams }: ContactPageProps) {
+  const formStatus = getFormStatus((await searchParams).form);
+
   return (
     <main className="bg-[#f6f5f1] text-[#171717]">
       <JsonLd
@@ -43,7 +55,11 @@ export default function ContactPage() {
           { label: "Contact", href: "/contact" },
         ]}
       />
-      <ContactSection title="Send the project details and SSJ will help shape the next step." kicker="Contact SSJ" />
+      <ContactSection
+        title="Send the project details and SSJ will help shape the next step."
+        kicker="Contact SSJ"
+        status={formStatus}
+      />
       <SiteFooter />
     </main>
   );
